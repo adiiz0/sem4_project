@@ -1,4 +1,7 @@
 manage.py
+.DS_Store
+/fast_ai/.DS_Store
+/fast_ai/fast_ai_app/.DS_Store/
 /fast_ai/db.sqlite3
 /fast_ai/fast_ai/__init__.py
 /fast_ai/fast_ai/__pycache__

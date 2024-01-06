@@ -1,0 +1,72 @@
+Needs of my project 
+
+1) Accessible and Efficient solutions that enable developers and busineeses to harness the capabilities of Large Language Models (LLMs)
+
+
+2) The challenge lies in the absence of a unified platform that seemlessly integrates leading technologies such as Langchain, HuggingFace, LLama2, and Mistral7b, to facilitate the fine-tuning of LLMs for diverseuse cases.
+
+
+3) Developers currently face hurdles in adapting state-of-the-art language models to their specific requirements, limiting the potential for innovation and customization in applications.
+
+
+4) This project seeks to address these challenges by establishing a comprehensive framework that not only streamlines the fine-tuning process but also provides a user-friendly interface for building applications on top of these tailored language models.
+
+
+
+==> Key issues to address include:
+
+1. Integration Complexity
+	The integration of Langchain, Hugging Face, LLama2, and Mistral 7b poses challanges in terms of compatibility and iteroperability. The project needs to tackle the complexity associated with seamlessly incorporating these technologies into a cohesive platform.
+
+
+
+2. Fine-tuning accessibility
+	Developers currently lack a straightforward method of fine-tuning LLMs to suit specific application needs. The project must devise user-friendly tools and documentation to democratize the fine-tuning process and make it accessible to a broader audience.
+
+
+
+3. Application Development barriers 
+	The absence of a unified platform for building application on top of fine-tuned language models hinders developers from efficiently translating their ideas into functional products. The project needs to provide a robust infrastructure that simplifies application development and deployment.
+
+
+
+4. Performance Optimization 
+	Optimizing the performance of fine-tuned language models on different hardware configurations and deployment environments is a critical aspect that demands attention. The project should address these challanges to ensure the seamless execution of applicaitons across varied scenarios.
+
+
+
+
+==> What does the project want us to do ???
+
+1) The project was under the education sub-selection of NLP, i.e. 
+->NLP
+     ->Education
+                ->Fine-tune LLMs and build your application
+
+
+
+So, not only do they want me to create an application but they also want me to make it educational 📚 for whoever uses my comprehensive framework (right now it's going to be a web application🕸️)
+
+
+
+2) They want me to integrate Langchain, Hugging Face, LLama2, and Mistral 7b
+
+
+3) They want me to devise user-friendly tools (in the web application) for fine-tuning LLMs to suit specific application needs
+
+
+
+4) They want me to provide information about how to use the tools alongwith information about how the tools work to democratise the fine-tuning process and make the platform accessible to a broader audience
+
+
+
+5) They want the platform to also be to provide a robust infrastructure for building applications on top of fine-tuned language models, so that, developers can efficiently translate their ideas into functional products. It needs to simplify application development and deployment. 
+
+
+
+6) Optimizing the performance of fine-tuned language models on different hardware configurations and deployment environments is a critical aspect that demands attention. The project should address these challenges to ensure the seamless execution of applications across varied scenarios.
+
+
+
+7) Community Collaboration: Encouraging collaboration and knowledge sharing among developers using the platform is vital for fostering a vibrant community. Implementing features such as forums, documentation updates, and collaborative spaces will be essential in building a supportive ecosystem around the project.By addressing these challenges, the "Fine-tune LLMs & Build Your Application" project aims to empower developers and businesses to unlock the full potential of LLMs, fostering innovation and customization in natural language processing applications.
+
