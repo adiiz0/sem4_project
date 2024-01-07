@@ -1,14 +1,6 @@
 manage.py
-.DS_Store
-/fast_ai/.DS_Store
-/fast_ai/fast_ai_app/.DS_Store/
 /fast_ai/db.sqlite3
-/fast_ai/fast_ai/__init__.py
 /fast_ai/fast_ai/__pycache__
-/fast_ai/fast_ai/asgi.py
-/fast_ai/fast_ai/wsgi.py
-/fast_ai/fast_ai_app/__init__.py
-/fast_ai/fast_ai_app/apps.py
 /fast_ai/fast_ai_app/__pycache__
-/fast_ai/fast_ai_app/migrations
+
 
