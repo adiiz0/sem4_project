@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def forums(request):
-    return render(request, 'forums.html')
+    return render(request, 'forums.html', {})
 
 
 def detail(request):
