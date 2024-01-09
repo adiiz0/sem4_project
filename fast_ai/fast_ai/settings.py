@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fast_ai_app',
     'tinymce',
+    'hitcount',
+    'taggit',
 ]
 
 MIDDLEWARE = [
