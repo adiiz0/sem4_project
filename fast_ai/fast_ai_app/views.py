@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Author, Category, Post
+from .utils import update_views
 
 # Create your views here.
 
@@ -14,6 +15,8 @@ def detail(request, slug):
     context = {
         "post":post
     }
+    update_views(request, post)
+
     return render(request, 'detail.html', context)
 
 
