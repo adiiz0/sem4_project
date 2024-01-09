@@ -17,7 +17,7 @@ class Author(models.Model):
     slug = models.SlugField(max_length=400, unique=True, blank=True)
     bio = HTMLField()
     points = models.IntegerField(default=0)
-    profile_pic = ResizedImageField(size=[50, 80], quality=100, upload_to="authors", default=None, null=True, blank=True)
+    profile_pic = ResizedImageField(size=[50, 80], quality=100, upload_to="media/authors", default=None, null=True, blank=True)
    
     def __str__(self):
         return self.fullname
@@ -25,7 +25,7 @@ class Author(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.fullname)
-        super(Post, self).save(*args, **kwargs)
+        super(Author, self).save(*args, **kwargs)
 
 #*************************************************/
 #*************************************************/
@@ -42,7 +42,7 @@ class Category(models.Model):
     def save(self, *args, **kwargs):
             if not self.slug:
                 self.slug = slugify(self.title)
-            super(Post, self).save(*args, **kwargs)
+            super(Category, self).save(*args, **kwargs)
 
 #*************************************************/
 #*************************************************/
