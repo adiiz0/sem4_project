@@ -7,6 +7,10 @@ from .utils import update_views
 
 
 def forums(request):
+    forums = Category.objects.all()
+    context = {
+        "forums":forums,
+    }
     return render(request, 'forums.html', {})
 
 
@@ -19,6 +23,13 @@ def detail(request, slug):
 
     return render(request, 'detail.html', context)
 
+def posts(request, slug):
+    category = get_object_or_404(Category, slug=slug)
+    posts= Post.objects.filter(approved=True, categories=category)
 
-def posts(request):
-    return render(request, 'posts.html')
+    context = {
+        "posts":posts,
+    }
+
+    
+    return render(request, 'posts.html', context)

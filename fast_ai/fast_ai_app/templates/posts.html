@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load hitcount_tags %}
 {% block content %}
     
     <div class="container">
@@ -15,22 +15,25 @@
                 <div class="replies">Replies/Views</div>
                 <div class="last-reply">Last Reply</div>
             </div>
-            <div class="table-row">
-                <div class="status"><i class="fa fa-fire"></i></div>
-                <div class="subjects">
-                    <a href="">Is learning Python on 2021 worth it?</a>
-                    <br>
-                    <span>Started by <b><a href="">User</a></b> .</span>
-                </div>
-                <div class="replies">
-                    2 replies <br> 125 views
-                </div>
 
-                <div class="last-reply">
-                    Oct 12 2021
-                    <br>By <b><a href="">User</a></b>
-                </div>
-            </div>
+	        {% for post in posts %}
+                    <div class="table-row">
+                        <div class="status"><i class="fa fa-fire"></i></div>
+                        <div class="subjects">
+                            <a href="{{post.get_url}}">{{post.title}}</a>
+                            <br>
+                            <span>Started by <b><a href="">{{post.user.fullname|title}}</a></b> .</span>
+                        </div>
+                        <div class="replies">
+                            2 replies <br> {% get_hit_count for post%} views
+                        </div>
+
+                        <div class="last-reply">
+                            Oct 12 2021
+                            <br>By <b><a href="">User</a></b>
+                        </div>
+                    </div>
+	        {% endfor %}
             <!--starts here-->
             <div class="table-row">
                 <div class="status"><i class="fa fa-fire"></i></div>

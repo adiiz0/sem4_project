@@ -6,6 +6,7 @@ from tinymce.models import HTMLField
 from hitcount.models import HitCountMixin, HitCount
 from django.contrib.contenttypes.fields import GenericRelation
 from taggit.managers import TaggableManager
+from django.shortcuts import reverse
 #*************************************************/
 #*************************************************/
 #*************************************************/
@@ -15,7 +16,7 @@ class Author(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     fullname = models.CharField(max_length=40, blank=True)
     slug = models.SlugField(max_length=400, unique=True, blank=True)
-    bio = HTMLField()
+    bio = HTMLField() 
     points = models.IntegerField(default=0)
     profile_pic = ResizedImageField(size=[50, 80], quality=100, upload_to="media/authors", default=None, null=True, blank=True)
    
@@ -75,3 +76,8 @@ class Post(models.Model):
         })
 #*************************************************/
 #*************************************************/
+
+def get_url(self):
+    return reverse("detail", kwargs = {
+        "slug":self.slug
+    })
